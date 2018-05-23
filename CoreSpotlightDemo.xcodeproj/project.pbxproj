@@ -12,6 +12,12 @@
 		36182AAF20B31072008B0C17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36182AAD20B31072008B0C17 /* Main.storyboard */; };
 		36182AB120B31072008B0C17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 36182AB020B31072008B0C17 /* Assets.xcassets */; };
 		36182AB420B31072008B0C17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 36182AB220B31072008B0C17 /* LaunchScreen.storyboard */; };
+		36182ABC20B31799008B0C17 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36182ABB20B31799008B0C17 /* TableViewController.swift */; };
+		36182AC220B31C09008B0C17 /* SpiderMan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36182ABD20B31C08008B0C17 /* SpiderMan.jpg */; };
+		36182AC320B31C09008B0C17 /* Captain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36182ABE20B31C08008B0C17 /* Captain.jpg */; };
+		36182AC420B31C09008B0C17 /* IronMan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36182ABF20B31C08008B0C17 /* IronMan.jpg */; };
+		36182AC520B31C09008B0C17 /* Hulk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36182AC020B31C08008B0C17 /* Hulk.jpg */; };
+		36182AC620B31C09008B0C17 /* Thor.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 36182AC120B31C09008B0C17 /* Thor.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		36182AB020B31072008B0C17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		36182AB320B31072008B0C17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		36182AB520B31072008B0C17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		36182ABB20B31799008B0C17 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		36182ABD20B31C08008B0C17 /* SpiderMan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = SpiderMan.jpg; sourceTree = "<group>"; };
+		36182ABE20B31C08008B0C17 /* Captain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Captain.jpg; sourceTree = "<group>"; };
+		36182ABF20B31C08008B0C17 /* IronMan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IronMan.jpg; sourceTree = "<group>"; };
+		36182AC020B31C08008B0C17 /* Hulk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Hulk.jpg; sourceTree = "<group>"; };
+		36182AC120B31C09008B0C17 /* Thor.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Thor.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +66,13 @@
 		36182AA820B31072008B0C17 /* CoreSpotlightDemo */ = {
 			isa = PBXGroup;
 			children = (
+				36182AC120B31C09008B0C17 /* Thor.jpg */,
+				36182ABE20B31C08008B0C17 /* Captain.jpg */,
+				36182AC020B31C08008B0C17 /* Hulk.jpg */,
+				36182ABF20B31C08008B0C17 /* IronMan.jpg */,
+				36182ABD20B31C08008B0C17 /* SpiderMan.jpg */,
 				36182AA920B31072008B0C17 /* AppDelegate.swift */,
+				36182ABB20B31799008B0C17 /* TableViewController.swift */,
 				36182AAB20B31072008B0C17 /* ViewController.swift */,
 				36182AAD20B31072008B0C17 /* Main.storyboard */,
 				36182AB020B31072008B0C17 /* Assets.xcassets */,
@@ -123,9 +141,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36182AC420B31C09008B0C17 /* IronMan.jpg in Resources */,
+				36182AC520B31C09008B0C17 /* Hulk.jpg in Resources */,
 				36182AB420B31072008B0C17 /* LaunchScreen.storyboard in Resources */,
+				36182AC320B31C09008B0C17 /* Captain.jpg in Resources */,
+				36182AC620B31C09008B0C17 /* Thor.jpg in Resources */,
 				36182AB120B31072008B0C17 /* Assets.xcassets in Resources */,
 				36182AAF20B31072008B0C17 /* Main.storyboard in Resources */,
+				36182AC220B31C09008B0C17 /* SpiderMan.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				36182AAC20B31072008B0C17 /* ViewController.swift in Sources */,
+				36182ABC20B31799008B0C17 /* TableViewController.swift in Sources */,
 				36182AAA20B31072008B0C17 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

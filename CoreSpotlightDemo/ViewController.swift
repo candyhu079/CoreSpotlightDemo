@@ -9,10 +9,20 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var myImageView: UIImageView!
+    @IBOutlet weak var myDescTextView: UITextView!
+    
+    var contentInfo: (String, String, String)? = nil
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        if contentInfo != nil {
+            self.navigationItem.title = contentInfo!.0
+            myDescTextView.text = contentInfo!.1
+            myImageView.image = UIImage(named: contentInfo!.2)
+        }
     }
 
     override func didReceiveMemoryWarning() {

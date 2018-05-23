@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreSpotlight
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -41,6 +42,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([Any]?) -> Void) -> Bool {
+        let identifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String
+        let array = identifier?.components(separatedBy: ".")
+        let indexStr = array?.last
+        if indexStr != nil, let index = Int(indexStr!) {
+            let vc = (window?.rootViewController as! UINavigationController).viewControllers[0] as! TableViewController
+            vc.pushDetailVC(index: index)
+            
+        }
+        
+        return true
+    }
+    
 }
 
